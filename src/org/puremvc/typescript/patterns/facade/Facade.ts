@@ -211,7 +211,7 @@ module puremvc
 		 * 		A <code>Command</code> is currently registered for the given
 		 *		<code>notificationName</code>.
 		 */
-		hasCommand( notificationName:string ):bool
+		hasCommand( notificationName:string ):boolean
 		{
 			return this.controller.hasCommand(notificationName);
 		}
@@ -270,7 +270,7 @@ module puremvc
 		 * @return
 		 * 		A <code>Proxy</code> is currently registered with the given	<code>proxyName</code>.
 		 */
-		hasProxy( proxyName:string ):bool
+		hasProxy( proxyName:string ):boolean
 		{
 			return this.model.hasProxy( proxyName );
 		}
@@ -330,7 +330,7 @@ module puremvc
 		 * @return
 		 * 		An <code>IMediator</code> is registered with the given <code>mediatorName</code>.
 		 */
-		hasMediator( mediatorName:string ):bool
+		hasMediator( mediatorName:string ):boolean
 		{
 			return this.view.hasMediator( mediatorName );
 		}
