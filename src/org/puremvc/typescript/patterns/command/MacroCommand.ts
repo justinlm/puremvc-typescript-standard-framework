@@ -31,7 +31,7 @@ module puremvc
 		 *
 		 * @protected
 		 */
-		subCommands:Function[] = null;
+		subCommands:Array<Function> = null;
 		
 		/**
 		 * Constructs a <code>MacroCommand</code> instance.
@@ -45,7 +45,7 @@ module puremvc
 		{
 			super();
 
-			this.subCommands = new Function[]();
+			this.subCommands = new Array<Function>();
 			this.initializeMacroCommand();
 		}
 
